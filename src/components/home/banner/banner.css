@@ -1,0 +1,39 @@
+.image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.5;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 40vh;
+  right: inherit;
+  color: hsl(0, 0%, 100%);
+  font-size: 4rem;
+  text-align: center;
+  padding: 0 32px 32px;
+  border-bottom: 1px solid;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #ffffff;
+  position: absolute;
+  text-align: center;
+  top: 70vh;
+  right: inherit;
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 3rem;
+    top: 30vh;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    top: 60vh;
+  }
+}

@@ -1,0 +1,11 @@
+.container-wsp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.MuiSvgIcon-root {
+  font-size: 40px;
+}
