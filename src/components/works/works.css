@@ -1,0 +1,24 @@
+.header-works {
+  padding: 32px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.header-works h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.text-works {
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  list-style: none;
+}

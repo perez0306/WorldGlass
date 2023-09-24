@@ -14,8 +14,8 @@ import Logo from "@/static/img/footer/logo.webp";
 const Footer = () => {
   return (
     <footer>
-      <div class="footer-content">
-        <div class="footer-logo">
+      <div className="footer-content">
+        <div className="footer-logo">
           <Image
             width={100}
             height={24}
@@ -24,7 +24,7 @@ const Footer = () => {
             title="Logo de tu empresa"
           />
         </div>
-        <div class="footer-links">
+        <div className="footer-links">
           <ul>
             {options?.map((item) => (
               <li key={`${item.text}-${item.href}`}>
@@ -33,12 +33,12 @@ const Footer = () => {
             ))}{" "}
           </ul>
         </div>
-        <div class="footer-contact">
-          <p>Contacto: ejemplo@dominio.com</p>
-          <p>Teléfono: +123-456-7890</p>
-          <p>Dirección: Calle Ficticia, Ciudad Imaginaria</p>
+        <div className="footer-contact">
+          <p>Contacto: sierrawilly69@gmail.com</p>
+          <p>Teléfono: +57 321 4822797</p>
+          <p>Dirección: Cra. 28a #64A-19, Bogotá</p>
         </div>
-        <div class="footer-social">
+        <div className="footer-social">
           <p>Síguenos en:</p>
           <a href="#">
             <FacebookIcon />

@@ -13,9 +13,16 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.9",
     "@mui/material": "^5.14.10",
+    "i": "^0.3.7",
     "next": "13.4.19",
+    "npm": "^10.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-responsive-carousel": "^3.2.23",
+    "scroll-carousel-react": "^1.0.0",
     "styled-components": "^6.0.8"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
   }
 }

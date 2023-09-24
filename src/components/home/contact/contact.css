@@ -1,0 +1,22 @@
+.container-contact {
+  background-color: #ffff;
+  width: 100%;
+  padding: 40px;
+}
+
+.title-contact {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.text-contact {
+  color: #000000;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+
+.contain {
+    max-width: 1000px;
+    margin: 16px auto;
+}

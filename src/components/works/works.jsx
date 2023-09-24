@@ -1,25 +1,35 @@
 import React from "react";
+import Image from "next/image";
+import { WorksImages } from "./works.utils";
+import "./works.css";
 
 const Works = () => {
   return (
-    <div>
-      {/* <header>
-<h1>Trabajos Realizados</h1>
-<p>Aquí puedes ver algunos de nuestros proyectos anteriores.</p>
-</header>
-
-<section class="trabajos">
-<div class="trabajo">
-    <img src="imagen1.jpg" alt="Trabajo 1">
-    <p>Descripción del trabajo 1.</p>
-</div>
-
-<div class="trabajo">
-    <img src="imagen2.jpg" alt="Trabajo 2">
-    <p>Descripción del trabajo 2.</p>
-</div>
-
-</section> */}
+    <div className="header-works">
+      <div>
+        <h1>Trabajos Realizados</h1>
+        <p className="text-works">
+          Te invitamos a explorar una selección de nuestros proyectos
+          anteriores. A través de esta galería, podrás sumergirte en nuestro
+          portafolio de trabajos realizados con dedicación y creatividad. Cada
+          proyecto representa un desafío único que abordamos con pasión y
+          compromiso, buscando superar las expectativas de nuestros clientes.
+        </p>
+      </div>
+      <ul className='list'>
+        {WorksImages.map((image, index) => (
+          <li>
+            <Image
+              quality={75}
+              priority
+              src={image}
+              width={200}
+              height={200}
+              alt={`polarizado-${index} `}
+            />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
