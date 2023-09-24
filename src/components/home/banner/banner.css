@@ -26,14 +26,22 @@
   right: inherit;
 }
 
+@media screen and (max-width: 1050px) {
+  .subtitle {
+    font-size: 1rem;
+    top: 80vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .subtitle {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .title {
     font-size: 3rem;
     top: 30vh;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-    top: 60vh;
   }
 }
