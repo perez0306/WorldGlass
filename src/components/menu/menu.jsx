@@ -11,13 +11,13 @@ const Menu = () => {
     <header className="container-navbar">
       <ul className="container-ul-header">
         {options?.map((item) => (
-          <li key={`${item.text}-${item.href}`}>
+          <li className='item-header' key={`${item.text}-${item.href}`}>
             <Link href={item.href}>{item.text}</Link>
           </li>
         ))}
       </ul>
       <div className='container-phone-menu'>
-        <PhoneEnabledIcon />
+        <PhoneEnabledIcon className='icon-phone'/>
         <p className='phone-menu'>321 - 4822797</p>
       </div>
     </header>

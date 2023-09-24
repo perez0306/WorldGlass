@@ -1,7 +1,18 @@
-import React from "react";
-import './abouts.css'
+'use client';
+import React, { useEffect } from "react";
+import "./abouts.css";
 
 const Abouts = () => {
+  useEffect(() => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      const ubication = document.getElementById("ubication");
+      ubication.style.color = "#ffffff";
+    }
+  }, []);
+
   return (
     <div className="container-about">
       <section className="container-items">
@@ -44,7 +55,7 @@ const Abouts = () => {
         </div>
       </section>
       <section className="container-maps">
-        <h3>Ubicación</h3>
+        <h3 id="ubication">Ubicación</h3>
         <iframe
           className="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6353481671927!2d-74.07808872495241!3d4.658942942017986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b7f2eac05f9%3A0xe785dbb478483f55!2sWorld%20Glass!5e0!3m2!1ses!2sco!4v1695528717385!5m2!1ses!2sco"

@@ -20,12 +20,16 @@
   background-color: #0f0f0f;
 }
 
+.item-header {
+  color: #ffffff;
+}
+
 .container-phone-menu {
   display: flex;
   gap: 16px;
   align-items: center;
 }
 
-.phone-menu{
+.phone-menu, .icon-phone{
   color: #ffffff;
 }
